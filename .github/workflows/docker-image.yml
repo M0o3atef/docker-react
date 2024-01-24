@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  build:
+  build and test:
 
     runs-on: ubuntu-latest
 
@@ -15,4 +15,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dev --tag m0o3atef/docker-react
     - name: Test the Docker image
-      run: docker run -e CI=true m0o3atef/docker-react npm test
+      run: docker run -e CI=true m0o3atef/docker-react npm run test
