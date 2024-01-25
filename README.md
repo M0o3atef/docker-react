@@ -1,3 +1,10 @@
+# Important Note
+
+This project is done by Mohamed Atef for the purpose of learning Docker and Github Workflows. This was done as per the `Udemy` course called [Docker and Kubernetes: The Complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/).
+
+It contains github workflow to build the app, test it and then deploy it to Elastic BeansTalk instance on AWS cloud provider using a docker-compose instructions.
+
+----------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
