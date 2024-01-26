@@ -1,11 +1,11 @@
-from node:16-alpine as builder
+FROM node:16-alpine as builder
 
-workdir /app
-copy package.json .
-run npm install
-copy . .
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
 
-run npm run build
+RUN npm run build
 
-from nginx as server
-copy --from=builder /app/build /usr/share/nginx/html
+FROM nginx as server
+COPY --from=builder /app/build /usr/share/nginx/html
